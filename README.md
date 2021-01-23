@@ -1,7 +1,7 @@
 # DistilledKnowlegde
 ```bash
 $ # Get the code
-$ git clone https://github.com/ravioli0509/DistilledKnowlege.git
+$ git clone https://github.com/ravioli0509/DistilledKnowledge.git
 $ cd DistilledKnowledge
 $
 $ # Virtualenv modules installation (Unix based systems)
