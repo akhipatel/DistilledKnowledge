@@ -17,6 +17,12 @@ CREATE TABLE epi_score(
 CREATE TABLE gobi_score(
 	ccode TEXT,
 	score INTEGER,
+	license INTEGER,
+	mreadable INTEGER,
+	downloadable INTEGER,
+	uptodate INTEGER,
+	pubavail INTEGER,
+	free INTEGER,
 	PRIMARY KEY (ccode),
 	FOREIGN KEY (ccode) REFERENCES country (ccode)
 );

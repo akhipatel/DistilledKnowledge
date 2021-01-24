@@ -61,7 +61,7 @@ class EPI_Scraper:
     def save_ccode(self, td):
         link = td.select_one("a").get("href")
         ccode = re.search(EPI_Scraper.ccode_regexp, link).groups(0)[0]
-        country_name = td.get_text().strip("\n")
+        country_name = td.get_text().strip()
         
         q_args = [ccode, country_name]
         self.c.execute(EPI_Scraper.country_insert_check, (ccode,))
