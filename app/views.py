@@ -113,4 +113,4 @@ def map(request):
     usionMap = FusionCharts("maps/world", "myFirstMap", "650", "450", "myFirstmap-container", "json", dataSource)
 
 # returning complete JavaScript and HTML code, which is used to generate map in the browsers.
-    return render(request, 'index.html', {'output': fusionMap.render()})
+    return render(request, 'maps.html', {'output': fusionMap.render()})
