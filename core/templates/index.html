@@ -117,7 +117,20 @@
         </div>
       </div>
 
-      <div class="row mt-5">
+
+
+
+      <!-- // Include FusionCharts core file -->
+      <script type="text/javascript" src="{% "FusionCharts/fusioncharts.js"  %}"></script>
+
+      <!-- // Include FusionCharts maps file -->
+      <script type="text/javascript" src="{% "FusionCharts/fusioncharts.maps.js" %}"></script>
+
+      <!-- // Include FusionCharts Theme file -->
+      <script type="text/javascript" src="{% "FusionCharts/themes/fusioncharts.theme.fusion.js" %}"></script>
+      
+
+      <div class="row mt-5"></div>
         <div class="col-xl-8 mb-5 mb-xl-0">
           <div class="card shadow">
             <div class="card-header border-0">
@@ -342,5 +355,6 @@
 
 {% endblock content %}
 
-<!-- Specific JS goes HERE --> 
-{% block javascripts %}{% endblock javascripts %}
+
+{% block javascripts %}
+{% endblock javascripts %}
