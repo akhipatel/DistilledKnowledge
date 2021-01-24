@@ -39,6 +39,6 @@ CREATE TABLE wb_series_data(
 	year INTEGER,
 	svalue REAL,
 	PRIMARY KEY (scode, ccode, year),
-	FOREIGN KEY (scode) REFERENCES wb_series_name (scode),
+	FOREIGN KEY (scode) REFERENCES wb_series (scode),
 	FOREIGN KEY (ccode) REFERENCES country (ccode)
 );
