@@ -1,5 +1,6 @@
 {% extends 'layouts/base.html' %}
 
+
 {% block title %} Dashboard {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
@@ -160,7 +161,18 @@
         </div>
       </div>
 
-      <div class="row mt-5">
+
+
+
+      <title>FC-python wrapper</title>
+      {% load static %}
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" ></script>
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" ></script>
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js" ></script>
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" ></script>
+      
+
+      <div class="row mt-5"></div>
         <div class="col-xl-8 mb-5 mb-xl-0">
           <div class="card shadow">
             <div class="card-header border-0">
@@ -386,5 +398,6 @@
 
 {% endblock content %}
 
-<!-- Specific JS goes HERE --> 
-{% block javascripts %}{% endblock javascripts %}
+
+{% block javascripts %}
+{% endblock javascripts %}

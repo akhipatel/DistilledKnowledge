@@ -15,4 +15,7 @@ urlpatterns = [
 
     # The home page
     path('', views.index, name='home'),
+    
+    #path('', views.map,  name='map'),
+
 ]
