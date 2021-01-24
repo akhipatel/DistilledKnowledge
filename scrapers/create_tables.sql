@@ -27,7 +27,7 @@ CREATE TABLE gobi_score(
 	FOREIGN KEY (ccode) REFERENCES country (ccode)
 );
 
-CREATE TABLE wb_series_name(
+CREATE TABLE wb_series(
 	scode TEXT,
 	name TEXT,
 	PRIMARY KEY (scode)
@@ -37,8 +37,8 @@ CREATE TABLE wb_series_data(
 	scode TEXT,
 	ccode TEXT,
 	year INTEGER,
-	value REAL,
-	PRIMARY KEY (scode, ccode),
+	svalue REAL,
+	PRIMARY KEY (scode, ccode, year),
 	FOREIGN KEY (scode) REFERENCES wb_series_name (scode),
 	FOREIGN KEY (ccode) REFERENCES country (ccode)
 );
